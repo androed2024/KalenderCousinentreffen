@@ -1,0 +1,297 @@
+.summary-screen {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.summary-container {
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.summary-header {
+  margin-bottom: 2rem;
+}
+
+.summary-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin: 0 0 1.5rem 0;
+}
+
+.summary-name-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.name-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.name-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.summary-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 10rem);
+}
+
+.no-dates-message {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+.available-dates-section {
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.month-group {
+  margin-bottom: 2rem;
+}
+
+.month-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4a5568;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.dates-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+}
+
+.user-name-cell {
+  min-width: 120px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.date-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.date-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.date-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.date-day {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.summary-stats {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stats-text {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin: 0;
+}
+
+.stats-text strong {
+  color: #667eea;
+  font-weight: 800;
+}
+
+.summary-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-button {
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.back-button:active {
+  transform: translateY(0);
+}
+
+/* Participants section */
+.participants-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.participants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.participant-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #f7fafc;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.participant-entry:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+  transform: translateX(5px);
+}
+
+.participant-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.participant-date {
+  font-size: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Common dates section */
+.common-dates-section {
+  margin-top: auto;
+  padding-top: 3rem;
+}
+
+.no-common-dates {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .summary-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .summary-title {
+    font-size: 2rem;
+  }
+
+  .summary-name-badge {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .name-value {
+    font-size: 1.2rem;
+  }
+
+  .dates-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .user-name-cell {
+    text-align: center;
+    min-width: unset;
+  }
+
+  .date-boxes {
+    justify-content: center;
+  }
+
+  .date-box {
+    width: 45px;
+    height: 45px;
+  }
+
+  .date-day {
+    font-size: 1rem;
+  }
+
+  .participant-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .participant-date {
+    font-size: 0.9rem;
+  }
+}

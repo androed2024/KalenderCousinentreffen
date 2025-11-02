@@ -1,0 +1,21 @@
+.matrix-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000 !important;
+  overflow: hidden;
+  z-index: 9999 !important;
+  pointer-events: all;
+}
+
+.matrix-canvas {
+  display: block !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000 !important;
+}

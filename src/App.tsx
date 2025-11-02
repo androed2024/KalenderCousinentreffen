@@ -16,7 +16,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Log to confirm new version is loaded
+  // Log to confirm new version is loaded 
   useEffect(() => {
     console.log('🎬 Matrix Animation App v2.0 - Starting with matrix screen, current screen:', screen);
     // Force screen to matrix on mount
